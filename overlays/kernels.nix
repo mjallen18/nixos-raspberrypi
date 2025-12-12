@@ -51,6 +51,13 @@ let
 
   # Linux
 
+  linux_v6_18_0_argsOverride = {
+    modDirVersion = "6.18.0";
+    tag = "rpi-6.18.y";
+    rev = "3114bf728457e0a03e8c3e96798c04f2ffd89aca"; # 6.18.0
+    srcHash = "sha256-uGZexaYeQY9+2irR7NP5hNJuIaCIsHAMpVxJmvNGvGE="; #"sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+  };
+
   linux_v6_12_44_argsOverride = {
     modDirVersion = "6.12.44";
     tag = "unstable_20250829";
@@ -219,6 +226,7 @@ let
     ];
   };
 in {
+  "6_18_0" = linux_v6_18_0_argsOverride;
   "6_12_44" = linux_v6_12_44_argsOverride;
   "6_12_34" = linux_v6_12_34_argsOverride;
   "6_12_25" = linux_v6_12_25_argsOverride;

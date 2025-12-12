@@ -6,6 +6,17 @@ self: super: { # final: prev:
 
   # see `extra/git_hash` for a matching hash of the `raspberrypi/linux`
 
+  raspberrypifw_next_20251212 = super.raspberrypifw.overrideAttrs (old: {
+    # https://github.com/raspberrypi/firmware/releases/tag/1.20250915
+    version = "next_20251212";
+    src = super.fetchFromGitHub {
+      owner = "raspberrypi";
+      repo = "firmware";
+      rev = "33233827dfb5958c5a87ac1eb56b67aee4baf088";
+      hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    };
+  });
+
   raspberrypifw_20250915 = super.raspberrypifw.overrideAttrs (old: {
     # https://github.com/raspberrypi/firmware/releases/tag/1.20250915
     version = "1.20250915";
