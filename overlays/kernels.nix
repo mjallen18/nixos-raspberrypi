@@ -54,8 +54,8 @@ let
   linux_v6_18_0_argsOverride = {
     modDirVersion = "6.18.0";
     tag = "rpi-6.18.y";
-    rev = "3114bf728457e0a03e8c3e96798c04f2ffd89aca"; # 6.18.0
-    srcHash = "sha256-uGZexaYeQY9+2irR7NP5hNJuIaCIsHAMpVxJmvNGvGE="; #"sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    rev = "0176325914cab516b73a5f1456fcd5f98c4764ab"; # 6.18.0
+    srcHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
   };
 
   linux_v6_12_44_argsOverride = {

@@ -12,7 +12,7 @@ self: super: { # final: prev:
     src = super.fetchFromGitHub {
       owner = "raspberrypi";
       repo = "firmware";
-      rev = "33233827dfb5958c5a87ac1eb56b67aee4baf088";
+      rev = "8df92ab2fba81ec457bf07d616187de368ba357e";
       hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
     };
   });
