@@ -2,6 +2,7 @@
 , callPackage
 , ffmpeg
 , ffmpegVariant ? "small"
+, stdenv ? null
 }:
 
 let

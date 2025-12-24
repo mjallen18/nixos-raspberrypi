@@ -8,6 +8,7 @@
 , version ? null
 , source ? null
 , ffmpegVariant ? "small"
+, stdenv ? null
 }:
 
 let
